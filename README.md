@@ -1,6 +1,7 @@
 # Bootstrapping
 
-Comparing two call center models, Apollo 1 and Apollo 2, on average call time.
+If we want to compare two call center models, Apollo 1 and Apollo 2, we can take
+the average call time under each and see which one is lower.
 
 My question here is not which mean is lower. It is whether there is a real
 difference if we collect the calls again.
