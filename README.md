@@ -9,7 +9,7 @@ Bootstrapping resamples the observed calls with replacement, recomputes the mean
 each time, and gives a distribution instead of a single number. It assumes nothing
 about the shape of the data, which is the reason to use it.
 
-The call times here are **generated, not real data**.
+The call times here are generated, not real data.
 
 ## Files
 
