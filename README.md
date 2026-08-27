@@ -6,11 +6,17 @@ the average call time under each and see which one is lower.
 My question here is not which mean is lower. It is whether there is a real
 difference if we collect the calls again.
 
-Bootstrapping resamples the observed calls with replacement, recomputes the mean
-each time, and gives a distribution instead of a single number. It assumes nothing
-about the shape of the data, which is the reason to use it.
+So I resample the observed calls with replacement, recompute the mean each time,
+and end up with a distribution for each model instead of a single number.
+Bootstrapping assumes nothing about the shape of the data, which is the reason to
+reach for it.
 
-The call times here are generated, not real data.
+What I read off the result is the interval, not the point estimate. If the
+interval for the difference between the two models contains zero, then the gap in
+the raw means is not something I would act on.
+
+The call times are generated, so the numbers here demonstrate the method rather
+than measure anything.
 
 ## Files
 
