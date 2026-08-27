@@ -1,12 +1,13 @@
 # Bootstrapping
 
 Comparing two call center models, Apollo 1 and Apollo 2, on average call time.
-The question is not which mean is lower. **It is whether that gap survives if you
-collect the calls again.**
+
+My question here is not which mean is lower. It is whether there is a real
+difference if we collect the calls again.
 
 Bootstrapping resamples the observed calls with replacement, recomputes the mean
-each time, and gives a distribution instead of a single number. **It assumes
-nothing about the shape of the data**, which is the reason to use it.
+each time, and gives a distribution instead of a single number. It assumes nothing
+about the shape of the data, which is the reason to use it.
 
 The call times here are **generated, not real data**.
 
