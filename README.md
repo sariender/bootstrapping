@@ -1,22 +1,25 @@
 # Bootstrapping
 
 If we want to compare two call center models, Apollo 1 and Apollo 2, we can take
-the average call time under each and see which one is lower.
+the average call time under each and put the two numbers next to each other.
 
-My question here is not which mean is lower. It is whether there is a real
-difference if we collect the calls again.
+They will never come out identical. What I actually want to know is whether the
+difference between them is real, or whether it would come out differently if we
+collected the calls again.
 
-So I resample the observed calls with replacement, recompute the mean each time,
-and end up with a distribution for each model instead of a single number.
-Bootstrapping assumes nothing about the shape of the data, which is the reason to
-reach for it.
+So I resample the calls I already have, with replacement, and recompute the mean
+each time. A few thousand rounds later I have a distribution rather than a single
+number, and I can see how much that average moves around.
 
-What I read off the result is the interval, not the point estimate. If the
-interval for the difference between the two models contains zero, then the gap in
-the raw means is not something I would act on.
+The interval is the part I read, not the point estimate. If the interval for the
+difference still covers zero, I have not shown anything, and I would not ask
+anyone to ship on it.
 
-The call times are generated, so the numbers here demonstrate the method rather
-than measure anything.
+Bootstrapping suits this because it does not care what shape the data is in.
+Nothing to assume about normality, no test to choose between.
+
+The call times are generated, so this shows the method rather than measuring
+anything real.
 
 ## Files
 
